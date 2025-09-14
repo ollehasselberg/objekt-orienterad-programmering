@@ -13,6 +13,7 @@ namespace OOP
     {
         public string Name;
         public int Age;
+
         //NU SKAPAR JAG METODER FÖR KLASSEN ANIMAL
 
         public void Print()
@@ -25,13 +26,15 @@ namespace OOP
             Console.WriteLine("This animal runs");
         }
     }
-
+        // SUBKLASS SOM ÄRVER AV ANIMAL, 
     public class Owl : Animal
     {
         public int NumberOfLegs;
 
-        public new void Print()
+        public new void Print() //ANROPAR METODEN FRÅN ANIMAL
         {
+            //SKRIVER UT HUR DET SKA VISAS I SUBKLASS
+
             Console.WriteLine($"{Name} is an owl and is {Age} years old and has {NumberOfLegs} legs");
         }
 

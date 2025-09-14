@@ -29,7 +29,7 @@ namespace OOP
 
     public class Car : Vehicle
     {
-
+        //METODER SUBKLASS
         public new void Move()
         {
             Console.WriteLine("This car is moving");
