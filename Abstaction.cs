@@ -20,7 +20,7 @@ namespace OOP
         //Här implementerar jag den abstrakta metoden
         public override void Paint()
         {
-            Console.WriteLine("🟥");
+            Console.WriteLine("🟥 This is a red square");
         }
     }
 }

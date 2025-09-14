@@ -8,6 +8,8 @@ namespace OOP
 {
     //HÄR ÄR ETT EXEMPEL PÅ ARV-METODEN
     public class Animal
+
+        //ATTRIBUT FÖR "ANIMAL"
     {
         public string Name;
         public int Age;
@@ -17,7 +19,7 @@ namespace OOP
         {
             Console.WriteLine($"{Name} is an animal and is {Age} years old");
         }
-
+            //Metoder som visar om djuret springer 
         public void Run()
         {
             Console.WriteLine("This animal runs");

@@ -37,8 +37,8 @@ namespace OOP
                 //för varje gång jag anropar den så ökar värdet med +1.
 
             Counter counter = new Counter();
-            counter.increase();
-            counter.increase();
+            counter.increase();     //+1 count
+            counter.increase();     //+1 count
 
             Console.WriteLine($"Current count is {counter.getCount()}");
 
