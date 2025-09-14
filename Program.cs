@@ -15,6 +15,8 @@
             Car car2 = new Car();
             car2.Stop();
 
+            //Nu vill jag anropa Animal-klassen för att demonstrera att den ärver metoder från Animal-klassen.
+
             Animal animal = new Animal();
             animal.Name = "Olof";
             animal.Age = 6;
@@ -26,6 +28,17 @@
 
             animal.Print();
             owl.Print();
+
+                //Här är ett exempel på encapsulation-metoden.
+                //Jag skapar en "counter" som t.ex räknar besökare som går igenom en dörr. Idén är att 
+                //för varje gång jag anropar den så ökar värdet med +1.
+
+            Counter counter = new Counter();
+            counter.increase();
+            counter.increase();
+
+            Console.WriteLine($"Current count is {counter.getCount()}");
+
 
         }
     }
