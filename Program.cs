@@ -3,14 +3,16 @@ using System.Reflection.Metadata;
 
 namespace OOP
 {
+
     internal class Program
     {
         static void Main(string[] args)
         {
+               //OBJEKT & METODER FÖR KLASSERNA I "POLYMORPHISM"
+
             Vehicle vehicle1 = new Vehicle();
             vehicle1.Move();
 
-                //Jag skapar en ny bil och kallar på metoderna från mina klasser.
             
             Car car1 = new Car();
             car1.Move();
@@ -18,7 +20,7 @@ namespace OOP
             Car car2 = new Car();
             car2.Stop();
 
-            //Nu vill jag anropa Animal-klassen för att demonstrera att den ärver metoder från Animal-klassen.
+             //SKAPAR OBJEKT & SÄTTER ATTRIBUT FÖR KLASSERNA I "ARV"
 
             Animal animal = new Animal();
             animal.Name = "Olof";
@@ -29,12 +31,14 @@ namespace OOP
             owl.Age = 55;
             owl.NumberOfLegs = 2;
 
+            //METODER
+
             animal.Print();
             owl.Print();
 
-                //Här är ett exempel på encapsulation-metoden.
-                //Jag skapar en "counter" som t.ex räknar besökare som går igenom en dörr. Idén är att 
-                //för varje gång jag anropar den så ökar värdet med +1.
+                //OBJEKT & METODER FÖR KLASSERNA I "ENCAPSULATION"
+                    //Jag skapar en "counter" som t.ex räknar besökare som går igenom en dörr. Idén är att 
+                    //för varje gång jag anropar den så ökar värdet med +1.
 
             Counter counter = new Counter();
             counter.increase();     //+1 count
@@ -42,7 +46,7 @@ namespace OOP
 
             Console.WriteLine($"Current count is {counter.getCount()}");
 
-                //Jag har gjort en abstrakt klass och vill nu anropa den, om allt fungerar som det ska kommer den visa en röd ruta i termnialen
+                //OBJEKT & METOD FÖR KLASSERNA I "ABSTRACTION"
 
             Colour colour = new Red();
             colour.Paint();
@@ -51,5 +55,3 @@ namespace OOP
         }
     }
 }
-
-//Car har ärvt från Vehicles metoder.
