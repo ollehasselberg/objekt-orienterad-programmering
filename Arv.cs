@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-            //HÄR SKAPAR JAG MIN BASKLASS SOM HETER "VEHICLE", SAMT GER DEN ATTRIBUT SOM "BRAND" OCH "YEAR".
+            //HÄR SKAPAR JAG MIN BASKLASS SOM HETER "VEHICLE".
     public class Vehicle
     {
-      
-
+     
 
             //NU LÄGGER JAG TILL EN METOD FÖR BASKLASSEN VEHICLE
 
