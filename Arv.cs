@@ -9,8 +9,7 @@ namespace OOP
             //HÄR SKAPAR JAG MIN BASKLASS SOM HETER "VEHICLE", SAMT GER DEN ATTRIBUT SOM "BRAND" OCH "YEAR".
     public class Vehicle
     {
-        public string Brand;
-        public int Year;
+      
 
 
             //NU LÄGGER JAG TILL EN METOD FÖR BASKLASSEN VEHICLE
@@ -31,7 +30,6 @@ namespace OOP
 
     public class Car : Vehicle
     {
-        public int NumberOfDoors;
 
         public new void Move()
         {
