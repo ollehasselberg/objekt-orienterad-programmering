@@ -1,4 +1,7 @@
-﻿namespace OOP
+﻿using System.Drawing;
+using System.Reflection.Metadata;
+
+namespace OOP
 {
     internal class Program
     {
@@ -38,6 +41,11 @@
             counter.increase();
 
             Console.WriteLine($"Current count is {counter.getCount()}");
+
+                //Jag har gjort en abstrakt klass och vill nu anropa den, om allt fungerar som det ska kommer den visa en röd ruta i termnialen
+
+            Colour colour = new Red();
+            colour.Paint();
 
 
         }
