@@ -6,33 +6,38 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-            //HÄR SKAPAR JAG MIN BASKLASS SOM HETER "VEHICLE".
-    public class Vehicle
+    //HÄR ÄR ETT EXEMPEL PÅ ARV-METODEN
+    public class Animal
     {
-     
+        public string Name;
+        public int Age;
+        //NU SKAPAR JAG METODER FÖR KLASSEN ANIMAL
 
-            //NU LÄGGER JAG TILL EN METOD FÖR BASKLASSEN VEHICLE
-
-        public void Move()
+        public void Print()
         {
-            Console.WriteLine("This vehicle is moving.");
+            Console.WriteLine($"{Name} is an animal and is {Age} years old");
         }
 
-        public void Stop()
+        public void Run()
         {
-            Console.WriteLine("This vehicle is slowing down.");
+            Console.WriteLine("This animal runs");
         }
-
     }
 
-        //HÄR SKAPAR JAG MIN SUBKLASS: "CARS" SOM KOMMER ÄRVA ATTRIBUT OCH METODER FRÅN "VEHICLE".
-
-    public class Car : Vehicle
+    public class Owl : Animal
     {
+        public int NumberOfLegs;
 
-        public new void Move()
+        public new void Print()
         {
-            Console.WriteLine("This car is moving");
+            Console.WriteLine($"{Name} is an owl and is {Age} years old and has {NumberOfLegs} legs");
         }
+
+        
+            
     }
-}
+
+
+}    
+
+

@@ -15,6 +15,18 @@
             Car car2 = new Car();
             car2.Stop();
 
+            Animal animal = new Animal();
+            animal.Name = "Olof";
+            animal.Age = 6;
+
+            Owl owl = new Owl();
+            owl.Name = "Bengt";
+            owl.Age = 55;
+            owl.NumberOfLegs = 2;
+
+            animal.Print();
+            owl.Print();
+
         }
     }
 }
